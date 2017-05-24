@@ -38,7 +38,7 @@ namespace Web.Ui
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            app.UseStaticFiles();
+            app.UseStaticFiles(); // Allows all static files (including JS etc)
             app.UseStatusCodePages();
             
             // define default routes

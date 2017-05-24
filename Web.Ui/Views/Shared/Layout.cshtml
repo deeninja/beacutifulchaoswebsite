@@ -1,69 +1,202 @@
 ﻿<!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Beautiful Chaos</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Application</title>
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+        <link rel="stylesheet" href="~/css/site.css"/>
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
     </environment>
-</head>
-<body>
 
-<!-- Nav -->
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Web.Ui</a>
+</head>
+
+<body id="override">
+
+<!-- header container -->
+<section class="container-fluid">
+    <!-- header-->
+    <header>
+        <div class="row">
+                <!-- nav -->
+                <nav class="main-nav nav navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-sm-4">
+                                    
+                                    <!-- navbar header / burger + logo -->
+                                    <div class="navbar-header">
+                                        
+                                        <!-- data-toggle tells JS what kind of toggle, data-target what element to toggle -->
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-home" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+
+                                        <a class="navbar-brand" href="#">BEAUTIFULCHAOS</a>
+
+                                    </div><!-- /.navbar -->
+                                </div>
+                                
+                                <!-- collapse & navbar-collapse wrapper is used to specify what should be collapsed (children) -->
+                                <div class="collapse navbar-collapse" id="main-nav-home">
+                                    <!-- navbar body -->
+                                    <ul class="nav navbar-nav navbar-right">
+
+                                        <li role="presentation">
+                                            <a href="#" class="text-uppercase">Home</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#" class="text-uppercase">About</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#" class="text-uppercase">Services</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#" class="text-uppercase">Gallery</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#" class="text-uppercase">Testimonials</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#" class="text-uppercase">Contact</a>
+                                        </li>
+
+                                    </ul>
+                                </div><!-- /.navbar body -->
+                            </div>
+                        </div> <!-- /.row -->
+
+
+                    </div><!-- /.container-fluid -->
+            </nav> <!-- /.nav -->
+            
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-            </ul>
+    </header><!-- /.headernav -->
+</section> <!-- /.header container -->
+
+
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hero-content text-center">
+                    <h2>Come in, we're awesome!</h2>
+                    <p class="lead">High ceilings, pine wood flooring, great music, excellent coffee and a burning log fire add to the warmth and charm of our beautiful hair studio.</p>
+                    <p>
+                        <a href="#" class="btn btn-primary btn-large">Learn more »</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<!-- /.Nav -->    
+</section>
+<!-- /.hero -->
 
-<div class="container body-content">
+<!-- intro -->
+<section class="container intro">
+    <div class="row">
+        <div class="center-block col-md-8 col-md-push-2">
+            <h2 class="text-center">Introduction</h2>
+            <p class="text-center">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
+            <p class="text-center">Eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.</p>
+        </div>
+        </div>
+        <div class="row">
+          
+            <article class="col-md-4">
+                <figure class="text-center">
+                    <img class="icon" src="~/icons/scissors-comb.svg" alt="Alternate Text" />
+                </figure>
+                <h3 class="text-center">Heading</h3>
+                <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+            </article>
+            
+            
+            <article class="col-md-4">
+                <figure class="text-center">
+                    <img class="icon" src="~/icons/blowdryer.svg" alt="Alternate Text" />
+                </figure>
+                <h3 class="text-center">Heading</h3>
+                <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+            </article>
+            
+            <article class="col-md-4">
+                <figure class="text-center">
+                    <img class="icon" src="~/icons/heart.svg" alt="Alternate Text" />
+                </figure>
+                <h3 class="text-center">Heading</h3>
+                <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+            </article>
+            
+        </div>
+    
+</section>
+<!-- /.intro -->
+
+<!-- about -->
+<section class="container about"></section>
+<!-- /.about -->
+
+<!-- team -->
+<section class="container team"></section>
+<!-- /.team -->
+
+<!-- more-info -->
+<section class="container more-info"></section>
+<!-- /.more-info -->
+
+<!-- secondary-info-->
+<section class="container secondary-info"></section>
+<!-- /.secondary-info-->
+
+<!-- tesimonials -->
+<section class="container testimonials"></section>
+<!-- /.tesimonials -->
+
+<!-- cta -->
+<section class="container cta"></section>
+<!-- /.cta -->
+
+<!-- main-footer -->
+<footer class="row main-footer"></footer>
+<!-- /.main-footer -->
+
+
+<section class="container-main">
     @RenderBody()
-    <hr/>
-    <footer>
-        <p>&copy; 2016 - Web.Ui</p>
-    </footer>
-</div>
-
+</section>
 <environment names="Development">
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.0.0.js" asp-fallback-src="~/lib/jquery/dist/jquery.js"
+            asp-fallback-test="window.jQuery"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
 </environment>
+
 <environment names="Staging,Production">
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-            asp-fallback-test="window.jQuery">
-    </script>
-    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.0.0.js" asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
             asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
-    </script>
-    <script src="~/js/site.min.js" asp-append-version="true"></script>
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"></script>
+
+    <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </environment>
 
 @*@RenderSection("scripts", required: false)*@

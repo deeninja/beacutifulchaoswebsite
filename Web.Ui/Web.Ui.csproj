@@ -6,14 +6,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\lib\semantic\**" />
+    <Content Remove="wwwroot\lib\semantic\**" />
+    <EmbeddedResource Remove="wwwroot\lib\semantic\**" />
+    <None Remove="wwwroot\lib\semantic\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp1.1\Web.Ui.deps.json" />
+    <Content Include="bin\Debug\netcoreapp1.1\Web.Ui.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp1.1\Web.Ui.runtimeconfig.json" />
+    <Content Include="Sass\_settings.scss">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\js\vendor\foundation.js" />
+    <Content Include="wwwroot\js\vendor\foundation.min.js" />
+    <Content Include="wwwroot\js\vendor\jquery.js" />
+    <Content Include="wwwroot\js\vendor\what-input.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-default.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-default.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-default.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-default.min.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootstrap\less\bootswatch.less" />
+    <Content Include="wwwroot\lib\bootstrap\less\variables.less" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
-    <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\lib\" />
     <Folder Include="wwwroot\dist\" />
   </ItemGroup>
   <ItemGroup>
@@ -36,5 +60,9 @@
   
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp1.1\Web.Ui.dll" />
   </ItemGroup>
 </Project>

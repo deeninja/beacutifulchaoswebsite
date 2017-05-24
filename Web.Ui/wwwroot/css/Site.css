@@ -1,19 +1,39 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/*******************************
+     Utillities
+*******************************/
+div .right-floated {
+    float: right;
+    margin-left: 0.25em;
 }
+
+div [class*="right floated"] {
+    float: right;
+    margin-right: 0.25em;
+} 
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
+/*
+body {
+    padding-top: 40px;
+}*/
 
+
+/*******************************
+     Forms
+*******************************/
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 100%;
+}
+
+#formCustom input {
+    padding: 2rem;
 }
 
 /* styles for validation helpers */
@@ -41,3 +61,97 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
+.my-sidebar {
+    margin-top: 3rem;
+}
+
+
+
+/*******************************
+     Fonts
+*******************************/
+.main-nav a {
+    font-family: "Roboto", "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+
+
+/*******************************
+     Nav
+*******************************/
+#override .main-nav {
+    margin-bottom: 0;
+    background: transparent;
+    z-index: 1000;
+    box-shadow: none;
+    
+}
+
+#override .navbar-brand {
+    color: #f9f9f9;
+}
+
+#override .navbar-nav li a {
+    color: #f9f9f9;
+}
+
+header { height: auto;}
+
+/*.bgimage {
+    width:100%;
+    height:500px;
+    background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.bgimage h5 {
+    color:white;
+    text-shadow:2px 2px #333;
+}*/
+
+.hero {
+    background: url("http://source.unsplash.com/-y0q2es1ndA") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero h2 {
+    color: #f9f9f9;
+}
+
+.hero-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(106,203,251, 0.3));*/
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0, 0.3));
+    z-index: 999;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#override .jumbotron h1, #override .hero-content p {
+    color: #f9f9f9;
+}
+
+#override .intro > .row {
+    padding: 1rem 0 1rem 0;
+    padding: 16px 0 16px 0;
+}
+
+
+.icon {
+    width: 8rem;
+}
