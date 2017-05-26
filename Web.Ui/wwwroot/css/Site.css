@@ -1,4 +1,13 @@
-﻿/*******************************
+﻿/*-------- Palette ---------*/
+/*
+#cea8ff	(206,168,255) - purple
+#ceffaf	(206,255,175) - green
+#ffa4a4	(255,164,164) - red
+#8ad3ff	(138,211,255) - blue
+#feff82	(254,255,130) - yellow
+*/
+
+/*******************************
      Utillities
 *******************************/
 div .right-floated {
@@ -16,10 +25,23 @@ div [class*="right floated"] {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.section-padding {
+   /* padding: 6rem 0;*/
+}
+
+/*******************************
+     Typography
+*******************************/
 body {
-    text-rendering: auto;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: "Raleway","Times New Roman", Times, serif;
+    font-size: 16px;
 }
 
 
@@ -99,19 +121,7 @@ input[type="checkbox"].input-validation-error {
 
 header { height: auto;}
 
-/*.bgimage {
-    width:100%;
-    height:500px;
-    background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    background-attachment: fixed;
-}
-.bgimage h5 {
-    color:white;
-    text-shadow:2px 2px #333;
-}*/
+
 
 .hero {
     background: url("http://source.unsplash.com/-y0q2es1ndA") no-repeat center fixed;
@@ -163,23 +173,23 @@ header { height: auto;}
      feature line
 *******************************/
 .feature-line-section {
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
 }
-
 
 
 .feature-line-cont {
     color: #fff;
     width: 100%;
-    padding: 12rem 1rem;
+    padding: 15rem 1rem 18rem 1rem;
     background-color: #84DBFF;
+    height: auto;
 }
 
-.divider {
-    height: 30px;
-    padding-bottom: 10px;
-    width: 100%;
-    margin: 20px auto;
+
+.feature-line-cont  p {
+    display: block;
+    margin: 2rem 0 0 0;
+  
 }
 
 .feature-line {
@@ -201,10 +211,8 @@ header { height: auto;}
     background-color: #fff;
     margin-top: -88px;
     transition: all linear 0.2s;
+
 }
-
-
-
 
 .feature-icon-1:hover, .feature-icon-2:hover, .feature-icon-3:hover {
         background: #84DBFF;
@@ -215,12 +223,7 @@ header { height: auto;}
         /*transform: rotate(360deg)*/
 }
 
-
-
-
-
-
-    .feature-icon-1:after, .feature-icon-2:after, .feature-icon-3:after {
+.feature-icon-1:after, .feature-icon-2:after, .feature-icon-3:after {
         transition: top 0.2s ease, border 0.6s ease, border-radius 0.4s ease;
         position: absolute;
         left: 4%;
@@ -280,4 +283,113 @@ header { height: auto;}
     opacity: 1;
     transform: scale(1);
     visibility: visible;
+}
+
+
+@media screen and (max-width: 991px) {
+    .feature-icon-1, .feature-icon-2, .feature-icon-3 {
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+
+    .feature-icon-1:hover:after, .feature-icon-2:hover:after, .feature-icon-3:hover:after {
+        display: none;
+    }
+
+    .feature-line-cont > .col-md-4 {
+       /* height: 15rem;*/
+        padding: 4rem 0;
+    }
+
+    .feature-line-cont {
+        padding: 6rem 1rem 6rem 1rem;
+    }
+
+}
+
+/*******************************
+     gallery
+*******************************/
+.gallery {
+    box-shadow: 0 0 2px #000;
+}
+
+.gallery .col-md-3 {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*******************************
+     about
+*******************************/
+
+.about {
+    background: #000000;
+    color: #f9f9f9;
+
+}
+.about .row {
+     padding: 6rem 0;
+}
+.about h2 {
+    color: #f9f9f9;
+}
+
+
+/*******************************
+     more info
+*******************************/
+.more-info .row > .col-md-3 {
+    padding: 6rem 1rem;
+}
+
+.more-info .row > .col-md-3:nth-of-type(1) {
+    background: rgba(206, 255, 175, 0.78);
+}
+
+    .more-info .row > .col-md-3:nth-of-type(2) {
+        background: #8ad3ff;
+        background: rgba(138, 211, 255, 0.78);
+    }
+
+.more-info .row > .col-md-3:nth-of-type(3) {
+        background: #ffa4a4;
+        background: rgba(255, 164, 164, 0.78);
+    }
+
+.more-info .row > .col-md-3:nth-of-type(4) {
+        background: #feff82;
+        background: rgba(254, 255, 130, 0.78);
+    }
+
+.more-info-item h5 {
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+
+
+/*******************************
+     testimonials
+*******************************/
+#testimonial-slider {
+    padding: 4rem;
+    background: #f4f4f4;
+}
+
+.star-container > img {
+    width: 3rem;
+    display: inline;
+}
+
+.carousel-indicators > ol > li{
+    list-style: circle;
 }
