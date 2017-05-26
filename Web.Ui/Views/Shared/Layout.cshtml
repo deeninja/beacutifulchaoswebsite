@@ -6,15 +6,29 @@
     <title>@ViewData["Title"] - Application</title>
 
     <environment names="Development">
+        <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Roboto:400,700" rel="stylesheet">
+        <!-- custom styles -->
         <link rel="stylesheet" href="~/css/site.css"/>
     </environment>
     <environment names="Staging,Production">
+        <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Roboto:400,700" rel="stylesheet">
+        <!-- custom styles -->
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
     </environment>
 
@@ -27,62 +41,62 @@
     <!-- header-->
     <header>
         <div class="row">
-                <!-- nav -->
-                <nav class="main-nav nav navbar navbar-default navbar-fixed-top" role="navigation">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="col-sm-4">
-                                    
-                                    <!-- navbar header / burger + logo -->
-                                    <div class="navbar-header">
-                                        
-                                        <!-- data-toggle tells JS what kind of toggle, data-target what element to toggle -->
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-home" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
+            <!-- nav -->
+            <nav class="main-nav nav navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-sm-4">
 
-                                        <a class="navbar-brand" href="#">BEAUTIFULCHAOS</a>
+                                <!-- navbar header / burger + logo -->
+                                <div class="navbar-header">
 
-                                    </div><!-- /.navbar -->
-                                </div>
-                                
-                                <!-- collapse & navbar-collapse wrapper is used to specify what should be collapsed (children) -->
-                                <div class="collapse navbar-collapse" id="main-nav-home">
-                                    <!-- navbar body -->
-                                    <ul class="nav navbar-nav navbar-right">
+                                    <!-- data-toggle tells JS what kind of toggle, data-target what element to toggle -->
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-home" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
 
-                                        <li role="presentation">
-                                            <a href="#" class="text-uppercase">Home</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#" class="text-uppercase">About</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#" class="text-uppercase">Services</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#" class="text-uppercase">Gallery</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#" class="text-uppercase">Testimonials</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#" class="text-uppercase">Contact</a>
-                                        </li>
+                                    <a class="navbar-brand" href="#">BEAUTIFULCHAOS</a>
 
-                                    </ul>
-                                </div><!-- /.navbar body -->
+                                </div><!-- /.navbar -->
                             </div>
-                        </div> <!-- /.row -->
+
+                            <!-- collapse & navbar-collapse wrapper is used to specify what should be collapsed (children) -->
+                            <div class="collapse navbar-collapse" id="main-nav-home">
+                                <!-- navbar body -->
+                                <ul class="nav navbar-nav navbar-right">
+
+                                    <li role="presentation">
+                                        <a href="#" class="text-uppercase">Home</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#" class="text-uppercase">About</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#" class="text-uppercase">Services</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#" class="text-uppercase">Gallery</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#" class="text-uppercase">Testimonials</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#" class="text-uppercase">Contact</a>
+                                    </li>
+
+                                </ul>
+                            </div><!-- /.navbar body -->
+                        </div>
+                    </div> <!-- /.row -->
 
 
-                    </div><!-- /.container-fluid -->
+                </div><!-- /.container-fluid -->
             </nav> <!-- /.nav -->
-            
+
         </div>
     </header><!-- /.headernav -->
 </section> <!-- /.header container -->
@@ -108,43 +122,76 @@
 <!-- intro -->
 <section class="container intro">
     <div class="row">
-        <div class="center-block col-md-8 col-md-push-2">
+        <div class="center-block col-md-6 col-md-push-3">
             <h2 class="text-center">Introduction</h2>
             <p class="text-center">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
             <p class="text-center">Eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.</p>
         </div>
-        </div>
-        <div class="row">
-          
-            <article class="col-md-4">
-                <figure class="text-center">
-                    <img class="icon" src="~/icons/scissors-comb.svg" alt="Alternate Text" />
-                </figure>
-                <h3 class="text-center">Heading</h3>
-                <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
-            </article>
-            
-            
-            <article class="col-md-4">
-                <figure class="text-center">
-                    <img class="icon" src="~/icons/blowdryer.svg" alt="Alternate Text" />
-                </figure>
-                <h3 class="text-center">Heading</h3>
-                <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
-            </article>
-            
-            <article class="col-md-4">
-                <figure class="text-center">
-                    <img class="icon" src="~/icons/heart.svg" alt="Alternate Text" />
-                </figure>
-                <h3 class="text-center">Heading</h3>
-                <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
-            </article>
-            
-        </div>
-    
+    </div>
+    <div class="row">
+
+        <article class="col-md-4">
+            <figure class="text-center">
+                <img class="icon" src="~/icons/scissors-comb.svg" alt="Alternate Text"/>
+            </figure>
+            <h3 class="text-center">Heading</h3>
+            <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+        </article>
+
+        <article class="col-md-4">
+            <figure class="text-center">
+                <img class="icon" src="~/icons/blowdryer.svg" alt="Alternate Text"/>
+            </figure>
+            <h3 class="text-center">Heading</h3>
+            <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+        </article>
+
+        <article class="col-md-4">
+            <figure class="text-center">
+                <img class="icon" src="~/icons/heart.svg" alt="Alternate Text"/>
+            </figure>
+            <h3 class="text-center">Heading</h3>
+            <p class="text-center lead">Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.</p>
+        </article>
+
+    </div>
+
 </section>
 <!-- /.intro -->
+    
+<!-- feature animation -->
+<div class="container-fluid">
+    
+    <div class="row text-center" id="feature-row">
+        <section class="feature-line-section">
+
+            <div class="feature-line-cont">
+                <div class="col-md-4 text-center">
+                    <div class="feature-hover">
+                        <i class="feature-icon-1 fa fa-star"></i>
+                        <p>Top quality styles</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 icon-container">
+                    <div class="feature-hover icon-container-2">
+                        <i class="feature-icon-2 fa fa-group"></i>
+                        <p class="lead">Friendly passionate team</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-hover icon-container-3">
+                        <i class="feature-icon-3 fa fa-thumbs-up"></i>
+                        <p class="lead">Come and see what all the fuss is about!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+<!-- /.feature animation -->
 
 <!-- about -->
 <section class="container about"></section>
