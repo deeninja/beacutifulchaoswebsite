@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap": "v3.3.7",
-    "jQuery": "3.0.0"
+    "jQuery": "3.0.0",
+    "instaFeed": "*"
   }
 }

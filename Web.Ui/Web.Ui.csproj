@@ -20,6 +20,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="wwwroot\images\concrete-texture.png" />
+    <Content Include="wwwroot\images\concrete_wall.png" />
     <Content Include="wwwroot\js\vendor\foundation.js" />
     <Content Include="wwwroot\js\vendor\foundation.min.js" />
     <Content Include="wwwroot\js\vendor\jquery.js" />
@@ -39,6 +40,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
     <Folder Include="wwwroot\dist\" />
+    <Folder Include="wwwroot\lib\spectagramjs\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
