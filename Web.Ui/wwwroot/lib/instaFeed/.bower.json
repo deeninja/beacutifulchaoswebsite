@@ -1,0 +1,14 @@
+{
+  "name": "instaFeed",
+  "homepage": "https://github.com/dkarandana/instaFeed",
+  "_release": "697be67384",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "697be67384674f6cdfd83aed4343f8d6ef538e15"
+  },
+  "_source": "https://github.com/dkarandana/instaFeed.git",
+  "_target": "*",
+  "_originalSource": "instaFeed",
+  "_direct": true
+}

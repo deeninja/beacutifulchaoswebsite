@@ -29,9 +29,16 @@ div [class*="right floated"] {
 .no-padding {
    padding: 0;
 }
+
 .text-white {
     color: #e2e2e2;
 }
+
+.btn-icon {
+    margin-right: .8rem;
+    font-size: 1.8rem;
+}
+
 
 /*******************************
      Typography
@@ -51,6 +58,7 @@ body {
     padding: 8px 16px;
     
 }
+
 /*******************************
      Forms
 *******************************/
@@ -101,7 +109,7 @@ input[type="checkbox"].input-validation-error {
 *******************************/
 .main-nav a {
     font-family: "Roboto", "Times New Roman", Times, serif;
-    font-weight: bold;
+    color: #e5e5e5;
 }
 
 
@@ -367,11 +375,7 @@ header {
     .feature-line-cont {
         padding: 6rem 1rem 6rem 1rem;
     }
-
-  
-
 }
-
 
 
 /************************************
@@ -432,13 +436,10 @@ header {
     }
 }
 
+
 /*******************************
      gallery
 *******************************/
-.gallery {
-    box-shadow: 0 0 2px #000;
-}
-
 .gallery .col-md-3 {
     margin: 0;
     padding-left: 0;
@@ -457,9 +458,8 @@ header {
 *******************************/
 
 .about {
-    background: #000000;
-    color: #f9f9f9;
-
+    background: #090909;
+    color: #e5e5e5;
 }
 .about .row {
      padding: 6rem 0;
@@ -507,7 +507,7 @@ header {
      testimonials
 *******************************/
 #testimonial-slider {
-    padding: 4rem;
+    padding: 5rem;
    
 }
 .star-container {
@@ -530,17 +530,19 @@ header {
 }
 
 #testimonial-slider .carousel-indicators .active {
-    background: #f07904;
+    background: #00bfff;
 }
 
 
 
 .follow-us {
-    background: url("http://source.unsplash.com/-y0q2es1ndA") no-repeat center fixed;
+    background: url("https://images.unsplash.com/photo-1492931178450-e13643c71978?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=da9713a62569498c28b0345c6769c783") no-repeat center fixed;
     background-size: cover;
-    height: 300px;
+    height: 400px;
     width: 100%;
     position: relative;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .follow-us-overlay {
@@ -550,7 +552,7 @@ header {
     bottom: 0;
     right: 0;
     /*background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(106,203,251, 0.3));*/
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0, 0.7));
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2));
     z-index: 999;
 }
 
@@ -594,7 +596,7 @@ header {
 }
 
 .bg-black {
-    background-color: #111;
+    background-color: #090909;
 }
 
 .cta-row {
@@ -716,3 +718,38 @@ small {
     margin-top: 11.5px;
     margin-bottom: 11.5px;
 }
+
+
+/**********************************************************************************************
+     about
+**********************************************************************************************/
+.about-attributes-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #e5e5e5;
+}
+    
+.about-attributes-content h3 {
+    color: #e5e5e5;
+}
+
+.about-attributes-content i {
+    padding: 2rem;
+    border: #e5e5e5 solid 2px;
+    border-radius: 50%;
+    transition: ease 0.2s;
+}
+
+.about-attributes-content i:hover {
+    background: #8ad3ff;
+    border: #fff solid 2px;
+    color: #fff;
+}
+
+    .about-attributes-content i:hover + h3 {
+        color: #fff;
+    }

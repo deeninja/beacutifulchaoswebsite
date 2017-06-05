@@ -32,6 +32,7 @@
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
     <Content Include="wwwroot\lib\bootstrap\less\bootswatch.less" />
     <Content Include="wwwroot\lib\bootstrap\less\variables.less" />
+    <Content Include="wwwroot\lib\instaFeed\instafeed.min.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,8 +40,9 @@
     <Folder Include="Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="Views\Partials\" />
+    <Folder Include="Views\Partials\" />
     <Folder Include="wwwroot\dist\" />
-    <Folder Include="wwwroot\lib\spectagramjs\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
