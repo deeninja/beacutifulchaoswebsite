@@ -110,6 +110,33 @@ input[type="checkbox"].input-validation-error {
 .main-nav a {
     font-family: "Roboto", "Times New Roman", Times, serif;
     color: #e5e5e5;
+    font-weight: 700;
+}
+
+.bc-nav li > a {
+    position: relative;
+}
+
+/* Create line before, set it's position and hide it*/
+.bc-nav li > a:before {
+    content: "";
+    height: 2px;
+    display: block;
+    width: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    visibility: hidden;
+    /*transform: scaleX(0);*/
+    background: #e5e5e5;
+    transition: ease 0.2s;
+    
+}
+
+.bc-nav li > a:hover:before {
+    visibility: visible;
+    width: 100%;
+   /* transform: scaleX(1);*/
 }
 
 
@@ -117,13 +144,12 @@ input[type="checkbox"].input-validation-error {
 /*******************************
      Nav
 *******************************/
-#override .main-nav {
-    margin-bottom: 0;
-    background: transparent;
-    z-index: 1000;
-    box-shadow: none;
-    
-}
+    #override .main-nav {
+        margin-bottom: 0;
+        background: transparent;
+        z-index: 1000;
+        box-shadow: none;
+    }
 
 #override .navbar-brand {
     color: #f9f9f9;
@@ -603,9 +629,12 @@ header {
     padding: 3rem 2rem;
 }
 
-
 .cta-row h4 {
     margin-top: .5rem;
+}
+
+.cta .lead {
+    margin-bottom: 0;
 }
 
 
@@ -634,9 +663,9 @@ header {
     display: none;
 }
 
-    .main-footer h4, .extra-footer h4 {
-        margin-top: 0;
-    }
+.main-footer h4, .extra-footer h4 {
+    margin-top: 0;
+}
 
 
 .footer-item {
@@ -750,6 +779,173 @@ small {
     color: #fff;
 }
 
-    .about-attributes-content i:hover + h3 {
-        color: #fff;
+.about-attributes-content i:hover + h3 {
+    color: #fff;
+}
+
+.about-icon:hover + .attribute-text-1:after {
+    width: 80px;
+}
+
+.attribute-text-1, .attribute-text-2, .attribute-text-3 {
+    border-bottom: 2px solid #e5e5e5;
+    transition: all ease 0.3s;
+    display: inline-block;
+}
+
+.attribute-text-1:hover {
+    border-bottom: 2px dashed #e5e5e5;
+}
+
+
+/*******************************
+     team
+*******************************/
+.team {
+    background-image: linear-gradient(rgba(22, 22, 22,0.5),rgba(22, 22, 22,0.5)), url(../images/concrete_wall.png);
+    background-repeat: repeat;
+    color: #e5e5e5;
+}
+
+.team-avatar {
+    max-width: 40%;
+    border-radius: 50%;
+}
+
+.team h3, .team h2 {
+    color: #e5e5e5;
+}
+
+
+/*******************************
+     gallery & spotlight
+*******************************/
+.about-gallery-header {
+    padding: 4rem;
+    background: #1a1c1f;
+}
+
+    .about-gallery-header h2 {
+        margin: 0;
     }
+
+.about-gallery {
+    height: 50vh;
+}
+
+.about-gallery > .row > .col-md-6, .col-md-12 {
+    padding: 0;
+}
+
+.about-spotlight-image {
+    filter: grayscale(100%);
+    position: relative;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.about-spotlight-image:hover {
+    filter: grayscale(0);
+}
+
+.about-spotlight-image + .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(rgba(22, 22, 22, 0.3), rgba(22, 22, 22, 0.7));
+    z-index: 1000;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.about-spotlight-image + .overlay:hover {
+    opacity: 0.3;
+}
+.about-cta .col-md-9, .about-cta .col-md-3 {
+    padding: 3rem;
+   
+}
+
+.about-cta .btn {
+    margin-top: 11.5px;
+}
+
+
+
+.btn a {
+    -webkit-transition: all 100ms cubic-bezier(0.290, 0.300, 0.50, 1.060);
+    -moz-transition: all 100ms cubic-bezier(0.290, 0.300, 0.50, 1.060);
+    -ms-transition: all 100ms cubic-bezier(0.290, 0.300, 0.50, 1.060);
+    -o-transition: all 100ms cubic-bezier(0.290, 0.300, 0.50, 1.060);
+    transition: all 100ms cubic-bezier(0.290, 0.300, 0.50, 1.060);
+    display: block;
+    margin: 20px auto;
+    max-width: 180px;
+    text-decoration: none;
+    
+    padding: 20px 30px;
+}
+
+a.btn {
+    color: #ededed;
+    box-shadow: #2196F3 0 0 0px 2px inset;
+}
+
+a.btn:hover {
+    box-shadow: #d71f96 0 0 0px 30px inset;
+}
+
+
+
+
+
+/**********************************************************************************************
+     services
+**********************************************************************************************/
+.services {
+    padding: 3rem 6rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0, 0.6)), url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg") no-repeat center fixed;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.service-icon {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+
+.service-item p {
+    /*border-bottom: 2px solid #e5e5e5;*/
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 2.2rem;
+    margin-left: 4%;
+}
+
+.services-gallery-header {
+    padding: 3rem;
+    background: #1a1c1f;
+}
+
+
+.services h2 {
+    color: #fff;
+    border-bottom: 2px solid #e5e5e5;
+    width: 30%;
+    margin: 6.4rem auto;
+    margin-top: 0;
+}
+
+
+.services > .row {
+    border-bottom: #e5e5e5 dashed 2px;
+    margin-bottom: 3rem;
+}

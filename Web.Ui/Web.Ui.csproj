@@ -19,6 +19,7 @@
     <Content Include="Sass\_settings.scss">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="wwwroot\images\avatar-2.png" />
     <Content Include="wwwroot\images\concrete-texture.png" />
     <Content Include="wwwroot\images\concrete_wall.png" />
     <Content Include="wwwroot\js\vendor\foundation.js" />
@@ -40,8 +41,6 @@
     <Folder Include="Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
-    <Folder Include="Views\Partials\" />
-    <Folder Include="Views\Partials\" />
     <Folder Include="wwwroot\dist\" />
   </ItemGroup>
   <ItemGroup>

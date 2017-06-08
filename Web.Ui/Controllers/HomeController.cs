@@ -17,5 +17,10 @@ namespace Web.Ui.Controllers
         {
             return View("About");
         }
+
+        public IActionResult Services()
+        {
+            return View("Services");
+        }
     }
 }
