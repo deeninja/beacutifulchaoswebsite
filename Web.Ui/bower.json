@@ -18,6 +18,11 @@
   "dependencies": {
     "bootstrap": "v3.3.7",
     "jQuery": "3.0.0",
-    "instaFeed": "*"
+    "instaFeed": "*",
+    "simplelightbox": "v1.11.0",
+    "ekko-lightbox": "v5.1.1"
+  },
+  "resolutions": {
+    "bootstrap": ">= 4.0.0-alpha.3"
   }
 }

@@ -1,0 +1,44 @@
+<!-- hero -->
+
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hero-content">
+                    <div class="col-md-12">
+                        <h2 class="text-center">See us in Action</h2>
+                        <p class="lead">High ceilings, pine wood flooring, great music, excellent coffee and a burning log fire add to the warmth and charm of our beautiful hair studio.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /.hero -->
+
+
+<div class="container-fluid main-gallery">
+    
+   
+    <div class="row">
+
+        <div class="col-md-3">
+             <a data-toggle="lightbox" href="http://placeimg.com/600/800/any">
+                <img href="" src="http://placeimg.com/300/400/any" alt="" />
+            </a>
+
+        </div>
+        
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/lib/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+}

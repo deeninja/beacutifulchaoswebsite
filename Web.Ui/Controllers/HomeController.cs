@@ -22,5 +22,10 @@ namespace Web.Ui.Controllers
         {
             return View("Services");
         }
+
+        public IActionResult Gallery()
+        {
+            return View("Gallery");
+        }
     }
 }

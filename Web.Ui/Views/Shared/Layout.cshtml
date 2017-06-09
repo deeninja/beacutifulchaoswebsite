@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Roboto:400,700" rel="stylesheet">
+        @RenderSection("Head",false)
         <!-- custom styles -->
         <link rel="stylesheet" href="~/css/site.css"/>
     </environment>
@@ -29,6 +30,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Roboto:400,700" rel="stylesheet">
+        @RenderSection("Head", false)
         <!-- custom styles -->
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
     </environment>
@@ -53,6 +55,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
             asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
             asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"></script>
+    <script src="~/lib/simplelightbox/dist/simple-lightbox.js"></script>
     @* Instafeed, needs live privacy policy URI - do after site is published *@
     @*  <script src="~/lib/instaFeed/instaFeed.min.js"></script>
     <script type="text/javascript">
@@ -73,7 +76,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
             asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
             asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"></script>
-
+    <script src="~/lib/simplelightbox/dist/simple-lightbox.js"></script>
     @* Instafeed, needs live privacy policy URI - do after site is published *@
     @*  <script src="~/lib/instaFeed/instaFeed.min.js"></script>
         <script type="text/javascript">
@@ -131,6 +134,6 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-@*@RenderSection("scripts", required: false)*@
+@RenderSection("scripts", required: false)
 </body>
 </html>
