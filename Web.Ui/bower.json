@@ -20,7 +20,8 @@
     "jQuery": "3.0.0",
     "instaFeed": "*",
     "simplelightbox": "v1.11.0",
-    "ekko-lightbox": "v5.1.1"
+    "ekko-lightbox": "v5.1.1",
+    "blueimp-gallery": "v2.25.1"
   },
   "resolutions": {
     "bootstrap": ">= 4.0.0-alpha.3"
