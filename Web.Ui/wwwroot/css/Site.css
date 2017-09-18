@@ -882,5 +882,9 @@ a.btn.btn-primary { transform: translate(0); }
     display: inline-block;
 }
 
-
 .blueimp-gallery > .prev, .blueimp-gallery > .next  { border: none;}
+
+.links a {
+    width: 30%;
+}
+.links a img { width: 30%;}
